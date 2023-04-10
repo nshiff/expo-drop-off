@@ -1,3 +1,6 @@
+#include exp_drop_off.s
+#include <stdio.h>
+
 int nate_assert(int expected, int actual){
   
 
@@ -14,11 +17,11 @@ int nate_assert(int expected, int actual){
 int main(){
   printf("hello, world\n");
 
-  int result0 = sparc_expo(0);
-  int result1 = sparc_expo(1);
-  int result2 = sparc_expo(2);
-  int result3 = sparc_expo(3);
-  int result4 = sparc_expo(4);
+  int result0 = exp_drop_off(0);
+  int result1 = exp_drop_off(1);
+  int result2 = exp_drop_off(2);
+  int result3 = exp_drop_off(3);
+  int result4 = exp_drop_off(4);
 
   nate_assert(0, result0);
   nate_assert(1, result1);
